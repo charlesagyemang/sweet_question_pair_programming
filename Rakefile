@@ -4,7 +4,7 @@ task :init do
 end
 
 task :run do
-    system('bundle exec rspec main/orders_report_spec.rb')
+    system('bundle exec rspec main/main_spec.rb')
 end
 
 
