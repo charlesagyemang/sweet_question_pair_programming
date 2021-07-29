@@ -1,6 +1,6 @@
 require_relative 'test.rb'
 
-describe Main do
+describe Test do
 
     describe '::main' do 
 

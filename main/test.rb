@@ -1,6 +1,6 @@
 
 
-class Main
+class Test
 
 end
 
