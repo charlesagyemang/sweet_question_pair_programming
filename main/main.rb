@@ -8,4 +8,9 @@ class Main
         longer_word.split("").reject{|a| shorter_word.split("").include?(a)}.join("")
     end
 
+    def self.get_unique_words_readable (word1, word2)
+        common = word1.char & word2.char
+        (word1 + word2).delete(common.join)
+    end
+
 end

@@ -13,6 +13,7 @@ describe Main do
 
         it 'should return the unique strings in both' do
             puts Main.get_unique_words("testing", "test")
+            puts Main.get_unique_words_readable("testing", "test")
         end
 
     end 
