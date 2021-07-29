@@ -1,4 +1,4 @@
-require_relative 'main.rb'
+require_relative 'test.rb'
 
 describe Main do
 
