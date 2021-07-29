@@ -1,60 +1,11 @@
-
-module Anthony
-    def name
-        "Anthony"  
-    end
-end
-
-module Martha
-    def name
-        "Martha"
-    end
-end
-
-module Ishmael
-    def name
-        "Ishmael"
-    end
-end
-
-module Emeka
-    def name
-        "Emeka"
-    end
-end
-
-
 class Main
 
-    include Anthony
-    extend  Martha
-    prepend Emeka
-    extend  Ishmael
+    def self.get_unique_words(word1, word2)
+        # check the bigger text
+        longer_word, shorter_word = [word1.to_s, word2.to_s].sort_by(&:length).reverse
 
-    def name
-        "Main"
+        #remove small word from big word
+        longer_word.split("").reject{|a| shorter_word.split("").include?(a)}.join("")
     end
-end
-
-class MainTwo
-
-    include Anthony
-    extend  Martha
-
-    def name
-        "MainTwo"
-    end
-end
-
-
-class MainThree
-    include Anthony
-    extend  Martha
-end
-
-
-class MainFour
-
-    extend  Martha
 
 end
