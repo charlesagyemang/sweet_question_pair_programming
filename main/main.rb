@@ -9,7 +9,7 @@ class Main
     end
 
     def self.get_unique_words_readable (word1, word2)
-        common = word1.char & word2.char
+        common = word1.chars & word2.chars
         (word1 + word2).delete(common.join)
     end
 
